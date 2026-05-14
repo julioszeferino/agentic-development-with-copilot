@@ -1,0 +1,184 @@
+# KB Domain Index
+# Auto-maintained — add new domains using the kb-architect agent or /create-kb prompt
+
+domains:
+
+  react:
+    name: React
+    description: Component architecture, hook correctness, UI identity, and targeted rendering performance patterns
+    path: react/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: state-and-rendering
+        path: concepts/state-and-rendering.md
+        confidence: 0.99
+      - name: hooks-and-effects
+        path: concepts/hooks-and-effects.md
+        confidence: 0.99
+      - name: lists-keys-and-identity
+        path: concepts/lists-keys-and-identity.md
+        confidence: 0.99
+      - name: state-sharing-and-lifting
+        path: concepts/state-sharing-and-lifting.md
+        confidence: 0.98
+    patterns:
+      - name: custom-hook-extraction
+        path: patterns/custom-hook-extraction.md
+      - name: targeted-memoization
+        path: patterns/targeted-memoization.md
+      - name: error-boundary-isolation
+        path: patterns/error-boundary-isolation.md
+    validated_by: context7+exa
+    validated_at: 2026-05-02
+
+  nodejs:
+    name: Node.js
+    description: Runtime architecture, module systems, package contracts, and production publishing patterns
+    path: nodejs/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: module-systems
+        path: concepts/module-systems.md
+        confidence: 0.99
+      - name: package-json-contract
+        path: concepts/package-json-contract.md
+        confidence: 0.99
+      - name: async-and-errors
+        path: concepts/async-and-errors.md
+        confidence: 0.96
+      - name: streams-and-backpressure
+        path: concepts/streams-and-backpressure.md
+        confidence: 0.98
+    patterns:
+      - name: dual-module-publish-safe
+        path: patterns/dual-module-publish-safe.md
+      - name: production-cli-skeleton
+        path: patterns/production-cli-skeleton.md
+      - name: stream-pipeline-processing
+        path: patterns/stream-pipeline-processing.md
+    validated_by: context7+exa
+    validated_at: 2026-05-02
+
+  obsidian-plugin:
+    name: Obsidian Plugin
+    description: Build, release, and submit Obsidian plugins to the Community Plugins directory
+    path: obsidian-plugin/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: plugin-lifecycle
+        path: concepts/plugin-lifecycle.md
+        confidence: 0.98
+      - name: manifest-and-compatibility
+        path: concepts/manifest-and-compatibility.md
+        confidence: 0.99
+      - name: commands-and-events
+        path: concepts/commands-and-events.md
+        confidence: 0.97
+      - name: settings-and-persistence
+        path: concepts/settings-and-persistence.md
+        confidence: 0.97
+    patterns:
+      - name: robust-settings-tab
+        path: patterns/robust-settings-tab.md
+      - name: safe-resource-registration
+        path: patterns/safe-resource-registration.md
+      - name: community-submission-checklist
+        path: patterns/community-submission-checklist.md
+    validated_by: context7+exa
+    validated_at: 2026-05-02
+
+  pydantic:
+    name: Pydantic
+    description: Data validation, serialization, and settings management using Python type annotations
+    path: pydantic/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: base-model
+        path: concepts/base-model.md
+        confidence: 1.00
+      - name: field-api
+        path: concepts/field-api.md
+        confidence: 1.00
+      - name: validators
+        path: concepts/validators.md
+        confidence: 1.00
+      - name: settings
+        path: concepts/settings.md
+        confidence: 1.00
+    patterns:
+      - name: llm-output-parsing
+        path: patterns/llm-output-parsing.md
+      - name: nested-models
+        path: patterns/nested-models.md
+      - name: custom-validators
+        path: patterns/custom-validators.md
+    validated_by: context7
+    validated_at: 2026-05-02
+
+  python:
+    name: Python
+    description: Runtime fundamentals, typing, packaging standards, and robust application patterns
+    path: python/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: environments-and-dependencies
+        path: concepts/environments-and-dependencies.md
+        confidence: 0.99
+      - name: typing-and-static-safety
+        path: concepts/typing-and-static-safety.md
+        confidence: 0.98
+      - name: exceptions-and-error-boundaries
+        path: concepts/exceptions-and-error-boundaries.md
+        confidence: 0.97
+      - name: pyproject-and-build-system
+        path: concepts/pyproject-and-build-system.md
+        confidence: 0.99
+    patterns:
+      - name: src-layout-packaging
+        path: patterns/src-layout-packaging.md
+      - name: typed-config-model
+        path: patterns/typed-config-model.md
+      - name: cli-entrypoint-architecture
+        path: patterns/cli-entrypoint-architecture.md
+    validated_by: context7+exa
+    validated_at: 2026-05-02
+
+  typescript:
+    name: TypeScript
+    description: Compiler configuration, module interop, declaration contracts, and scalable build architecture
+    path: typescript/
+    entry_points:
+      index: index.md
+      quick_reference: quick-reference.md
+    concepts:
+      - name: tsconfig-foundations
+        path: concepts/tsconfig-foundations.md
+        confidence: 0.99
+      - name: module-systems-and-resolution
+        path: concepts/module-systems-and-resolution.md
+        confidence: 0.98
+      - name: declaration-files-and-api-surface
+        path: concepts/declaration-files-and-api-surface.md
+        confidence: 0.97
+      - name: project-references-and-build-mode
+        path: concepts/project-references-and-build-mode.md
+        confidence: 0.98
+    patterns:
+      - name: strict-tsconfig-baseline
+        path: patterns/strict-tsconfig-baseline.md
+      - name: library-publish-contract
+        path: patterns/library-publish-contract.md
+      - name: reference-monorepo-build
+        path: patterns/reference-monorepo-build.md
+    validated_by: context7+exa
+    validated_at: 2026-05-02
