@@ -10,6 +10,59 @@ Este diretorio centraliza agentes, prompts, Knowledge Base, Dev Loop e SDD para 
 - `dev/`: Dev Agentic Loop (iteracao estruturada e recuperacao de sessao).
 - `sdd/`: Spec-Driven Development em 5 fases.
 
+## How To Use
+
+Use esta secao para levar esta pasta `.github` para qualquer projeto seu.
+
+### 1) Copie a pasta `.github` para a raiz do seu projeto
+
+
+### 2) Abra o projeto no VS Code
+
+Certifique-se de que a estrutura existe na raiz:
+
+- `.github/agents/`
+- `.github/prompts/`
+- `.github/dev/`
+- `.github/sdd/`
+- `.github/kb/`
+
+### 3) Comece pelo fluxo mais rapido (`/dev`)
+
+No chat do Copilot, rode:
+
+```text
+/dev "descreva o que voce quer construir"
+```
+
+Exemplo:
+
+```text
+/dev "Quero criar um extrator de invoice com CLI e testes"
+```
+
+### 4) Ou use o fluxo completo SDD
+
+```bash
+/workflow_brainstorm arquivo_requirements.md
+/workflow_define {BRAINSTORM_ARQUIVO_GERADO.md}
+/workflow_design {DEFINE_ARQUIVO_GERADO.md}
+/workflow_build {DESIGN_ARQUIVO_GERADO.md}
+/workflow_ship
+```
+
+### 5) Itere quando necessario
+
+```bash
+/workflow_iterate "Corrija tal coisa..."
+```
+
+### 6) Dica de adocao por etapas
+
+1. Primeiro use apenas `/dev` em 1 tarefa pequena.
+2. Depois passe para o fluxo SDD em features maiores.
+3. Por fim, personalize agentes em `.github/agents/` para seu dominio.
+
 ## Catalogo de Agentes
 
 Total de agentes: **31** agentes especializados + **1 template**.
